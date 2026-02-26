@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Networking Intelligence Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Networking Intelligence Dashboard</h1>
+
+<div class="top-input">
+<label>O’Reilly Course Link:</label>
+<input type="text" id="courseLink">
+<button onclick="initialize()">Load</button>
+</div>
+
+<div class="settings">
+<label>Minutes per day:</label>
+<input type="number" id="dailyMinutes" value="30">
+</div>
+
+<div class="analytics">
+<h2>Overall Progress</h2>
+<div class="progress-bar"><div id="overallBar"></div></div>
+<p id="overallStats"></p>
+<p id="timeProjection"></p>
+<p id="realProjection"></p>
+<p id="streakInfo"></p>
+</div>
+
+<div id="phaseContainer"></div>
+
+<div class="plan">
+<h2>Next 7 Day Study Plan</h2>
+<ul id="studyPlan"></ul>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
